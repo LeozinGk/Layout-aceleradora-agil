@@ -1,0 +1,91 @@
+.board {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    display: grid;
+    width: 750px;
+    height: 50%;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        'topo topo topo'
+        'menusuperior menusuperior menusuperior'
+        'menu1 conteudo menu2'
+        'menu1 conteudo menu2'
+        'rodape rodape rodape';
+  }
+
+.topo {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    grid-area: topo;
+}
+
+.menusuperior {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    grid-area: menusuperior;
+}
+
+.menulateral1 {
+    color: red;
+    width: 150px;
+    height: 100%;
+    background-color: rgb(214, 210, 210);
+    grid-area: menu1;
+}
+
+.conteudo {
+    border-left: dashed;
+    border-right: dashed;
+    color: red;
+    width: 450px;
+    height: 350px;;
+    background-color: rgb(214, 210, 210);
+    grid-area: conteudo;
+}
+
+.menulateral2 {
+    color: red;
+    width: 150px;
+    height: 100%;
+    background-color: rgb(214, 210, 210);
+    grid-area: menu2;
+}
+
+.rodape {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    grid-area: rodape;
+}
+
+.menusuperior ul li {
+    display: inline-block;
+    padding: 94px ;
+}
+
+#desafio {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
